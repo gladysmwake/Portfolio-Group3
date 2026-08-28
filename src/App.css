@@ -187,6 +187,111 @@ p {
   color: #8eb5ff;
 }
 
+.projects-page {
+  max-width: 1000px;
+  text-align: left;
+}
+
+.projects-header {
+  align-items: end;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(0, 1.4fr) minmax(220px, 0.6fr);
+  padding: 3rem 0 4rem;
+}
+
+.projects-header h1 {
+  font-size: clamp(2.8rem, 7vw, 5.5rem);
+  letter-spacing: -0.05em;
+  line-height: 0.98;
+  margin: 0;
+}
+
+.projects-intro {
+  color: #596273;
+  margin: 0 0 0.35rem;
+}
+
+.project-list {
+  border-top: 1px solid #d8deeb;
+}
+
+.project-card {
+  border-bottom: 1px solid #d8deeb;
+  padding: 1.5rem 0 1.75rem;
+  transition: padding 0.2s ease, background 0.2s ease;
+}
+
+.project-card:hover {
+  background: rgba(255, 255, 255, 0.55);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.project-card-topline,
+.project-card-content {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-card-topline {
+  color: #596273;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.project-number {
+  color: #0066ff;
+  font-weight: 700;
+}
+
+.project-card-content {
+  align-items: end;
+  gap: 2rem;
+  padding: 2.5rem 0 2rem;
+}
+
+.project-card h2 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  letter-spacing: -0.03em;
+  margin: 0;
+}
+
+.project-card-content p {
+  color: #596273;
+  font-size: 1rem;
+  margin: 0.75rem 0 0;
+  max-width: 540px;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  justify-content: end;
+}
+
+.project-tech span {
+  border: 1px solid #bfc9dc;
+  border-radius: 999px;
+  color: #374151;
+  font-size: 0.78rem;
+  padding: 0.35rem 0.7rem;
+}
+
+.project-link {
+  color: #0066ff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  color: #1a1a2e;
+}
+
 @media (max-width: 700px) {
   .about-content,
   .about-cta,
@@ -200,5 +305,20 @@ p {
 
   .about-link {
     justify-self: start;
+  }
+
+  .projects-header,
+  .project-card-content {
+    align-items: start;
+    grid-template-columns: 1fr;
+  }
+
+  .project-card-content {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .project-tech {
+    justify-content: start;
   }
 }
