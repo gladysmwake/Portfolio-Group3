@@ -1,29 +1,23 @@
 function Profile() {
   return (
-    <div
-      style={{
-        maxWidth: "500px",
-        margin: "40px auto",
-        padding: "25px",
-        border: "1px solid #ddd",
-        borderRadius: "10px",
-        fontFamily: "Arial",
-      }}
-    >
+    <div style={{
+      maxWidth: "500px",
+      margin: "40px auto",
+      padding: "25px",
+      border: "1px solid #ddd",
+      borderRadius: "10px",
+      fontFamily: "Arial"
+    }}>
       <h1 style={{ textAlign: "center" }}>My Profile</h1>
 
-      <h2>Faith Mathenge</h2>
-      <p>Software Developer</p>
+      <h2 contentEditable="true">Your Name</h2>
+      <p contentEditable="true">Software Developer</p>
 
-      <p>
-        <strong>Email:</strong> faith@example.com
-      </p>
-      <p>
-        <strong>Phone:</strong> +254 700 000 000
-      </p>
+      <p><strong>Email:</strong> <span contentEditable="true">your@email.com</span></p>
+      <p><strong>Phone:</strong> <span contentEditable="true">+254 700 000 000</span></p>
 
       <h3>Skills</h3>
-      <ul>
+      <ul contentEditable="true">
         <li>React</li>
         <li>JavaScript</li>
         <li>Python</li>
@@ -31,7 +25,7 @@ function Profile() {
       </ul>
 
       <h3>Projects</h3>
-      <ul>
+      <ul contentEditable="true">
         <li>React Web Application</li>
         <li>Python Trading Project</li>
       </ul>
