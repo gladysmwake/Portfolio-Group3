@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div className="page">
-      <h1>Hi, We are Group3 👋</h1>
+      <h1>Hi, We are Group3 👋
       <p className="subtitle">Software Developers | React & Full-Stack</p>
       <p>
         We build clean, functional web and mobile applications. Welcome to our
